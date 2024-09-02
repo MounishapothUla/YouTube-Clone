@@ -1,0 +1,528 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>youtube.html</title>
+        <style>
+            .a{
+                width:100%;
+            }
+            .video-preview{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+                column-gap:15px;
+                margin-left:25px;
+               margin-top:75px;
+                row-gap:15px;
+            }
+            .profile{
+                width:40px;
+                height:40px;
+                border-radius:30px;
+                margin-top:15px;
+            }
+            .video-inside{
+                display:flex;
+                flex-direction:row;
+             
+            }
+            .video-2{
+                margin-left:10px;
+            }
+            .b{
+            font-family: arial;
+            font-size:15px;
+            margin-bottom:6px;
+            }
+            .c{
+            font-family: arial;
+            font-size:12px;
+            margin-top:0px;
+            margin-bottom:2px;
+            }
+            .d{
+            font-family: arial;
+            font-size:12px;
+            margin-top:0px;
+            margin-bottom:0px;
+         
+           
+       
+         
+           
+        }
+        .hamburger-menu{
+            width:30px;
+            margin-left:10px;
+       
+        }
+        .youtube-logo{
+            width:110px;
+            margin-left:12px;
+   
+        }
+        .search{
+            width:50px;
+            background-color:white;
+            border-color:rgb(192, 192, 192);
+            box-shadow:inset 1px 2px 3px rgba(0  0  0  0.005);
+            border-width: 1px;
+            border-style:solid;
+            height:29px;
+            margin-left:-1px;
+           
+            margin-right:10px;
+
+        }
+        .voice-search{
+            border:none;
+            background-color:white;
+            border-radius:30px;
+           
+         
+
+
+        }
+        .vosea-2{
+            height:20px;
+            margin-top:4px;
+          
+           
+            
+            width:20px;
+            border-radius: 25px;
+           
+        }
+        .search-2{
+           height:25px;
+         
+           
+           
+        }
+        .search-bar{
+         flex:1;
+            height:25px;
+            border-width: 1px;
+            margin-top:0;
+            border-color:rgb(192, 192, 192);
+            padding-left:8px;
+          
+            box-shadow:inset 1px 2px 3px rgba(0  0  0  0.005);
+           border-style:solid;
+         
+           display:flex;
+           width:400px;
+        
+           
+        }
+        .search-bar::placeholder{
+            font-family:arial;
+        }
+        .upload{
+            width:25px;
+            height:22px;
+
+        }
+        .notification{
+            width:27px;
+            height:27px;
+            position:relative;
+        }
+        .count{
+            background-color:rgb(193, 5, 5);
+            color:white;
+            position:absolute;
+            
+           
+            right:0;
+            top:0;
+
+        }
+        .dp{
+            width:30px;
+            height:30px;
+            border-radius:30px;
+
+        }
+        
+        .sidebar{
+            position:fixed;
+            top:70px;
+            left:0;
+            bottom:0;
+            background-color:white;
+          
+
+            
+            width:72px;
+
+        }
+        .sidebar-link{
+            display:flex;
+            flex-direction:column;
+           justify-content:center;
+           align-items:center;
+            height:100px;
+            cursor:pointer;
+        }
+        .sidebar-link:hover{
+            background-color:rgb(235, 235, 235);
+        }
+       .sidebar-link img{
+        
+        
+        height:26px;
+        margin-bottom:4px;
+       }
+       .sidebar-link div{
+        font-family:Roboto,Arial;
+        font-weight:bold;
+        font-size:10px;
+
+       }
+        .notification-container{
+            position:relative;
+        }
+        .text{
+           position:absolute;
+           top:0;
+           right:-1px;
+           font-size:11px;
+           padding-left:5px;
+           padding-right:5px;
+           padding-top:2px;
+           padding-bottom:2px;
+           border-radius:15px;
+           background-color:rgb(186, 5, 5);
+           font-family: roboto,arial;
+           color:white;
+        }
+        .img-div{
+            position:relative;
+            
+        }
+        .duration{
+            position:absolute;
+            background-color:rgb(27, 23, 23);
+            color:white;
+            font-family:arial;
+            bottom:10px;
+            right:0;
+            margin-right:6px;
+            font-size:11px;
+            padding-top:1px;
+            padding-left:3px;
+            padding-right:3px;
+            padding-bottom:1px;
+            font-weight:bold;
+            border-radius:2px;
+        }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body style="
+    padding-left:60px;
+    padding-right:20px;
+   
+    margin-top:0;
+  " >
+        <div style="display:flex;
+        flex-direction:row;
+        position:fixed;
+        background-color:white;
+        top:0;
+        left:0;
+        border-bottom-width:1px;
+        border-bottom-color:gray;
+        border-bottom-style:solid;
+        z-index:1;
+
+        right:0;
+        
+        height:63px;
+        justify-content:space-between;">
+            <div style="display:flex;
+            align-items:center;
+         
+           ">
+            <img class="hamburger-menu" src="hamburger-menu.webp">
+            <img class="youtube-logo" src="logoyt.jpg">
+            </div>
+            <div style="  flex:1;
+            display:flex;
+            align-items:center;
+            flex-direction:row;
+            margin-left:130px;
+            margin-right:85px;" >
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search"><img class="search-2" src="search.png"></button>
+                <button class="voice-search"> <img class="vosea-2" src="voice search.png"></button>
+
+        
+          </div>
+            <div style="
+             width:150px;
+             margin-right:10px;
+             display:flex;
+             flex-shrink:0;
+             justify-content:space-between;
+             align-items:center;">
+             <img class="upload" src="upload.jpg">
+                <div class="notification-container"> 
+                    <img class="notification" src="notification.webp">
+                    <div class="text">5</div>
+                    
+                </div>
+            
+             <img  class="dp"  src="dp.jpg">
+          </div>
+            
+        </div>
+        <div class="sidebar">
+             <div class="sidebar-link">  <img src="home.png">
+            <div>Home</div></div>
+             <div  class="sidebar-link">  <img  src="explore.png">
+                <div>Explore</div>
+            
+            </div>
+             <div  class="sidebar-link">  <img  src="subscriptions.png">
+                <div>Subscriptions</div></div>
+             <div  class="sidebar-link"> <img  src="originals.png">
+                <div>Originals</div></div>
+             <div  class="sidebar-link"> <img  src="shorts.png">
+                <div>Shorts</div></div>
+             <div  class="sidebar-link">  <img  src="library.png">
+                <div>Library</div></div>
+        </div>
+        <div class="video-preview">
+            <div >
+                <div class="img-div">
+                    <img class="a" src="hq720.webp">
+                    <div class="duration">3:36</div>
+                </div>
+                <div class="video-inside">
+                    <div>
+                        <img class="profile" src="profile-1.jpg">
+                    </div>
+                    <div class="video-2">
+                        <p class="b"><b>Arctic Monkeys-I Wanna Be Yours(Lyrics)</b></p>
+                        <p class="c">Escape Lyrics</p>
+                        <p class="d">50M views &#183 2 Years ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+                    <div >
+                        <div class="img-div">
+            
+                        <img class="a" src="hqjee.jpg">
+                        <div class="duration">3:16</div>
+                        </div>
+                            <div style="display:grid;
+                            grid-template-columns: 20px 1fr;
+                            " >
+                                <div>
+                                    <img class="profile" src="profile-3.jpg">
+                                </div>
+                                <div style="display:inline-block;
+                                margin-left:18px;">
+                                    <p class="b"><b>Subhanallah"  Full Video Song | Yeh Jawaani Hai Deewani | Pritam | Ranbir Kapoor, Deepika Padukone</b></p>
+                                    <p class="c">T-Series</p>
+                                    <p class="d">179M views &#183  11 Years ago</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                    </div>
+                    
+                    <div >
+                        <div class="img-div">
+            
+                        <img class="a" src="hq720 (1).webp">
+                        <div class="duration">3:11</div>
+                        </div>
+                            <div style="display:grid;
+                            grid-template-columns: 20px 1fr;
+                            " >
+                                <div>
+                                    <img class="profile" src="profile-2.jpg">
+                                </div>
+                                <div style="display:inline-block;
+                                margin-left:18px;">
+                                    <p class="b"><b>Haan Ke Haan Song | Maharaj | A Netflix Film | Junaid, Sharvari, Sohail Sen, Monali Thakur, Kausar</b></p>
+                                    <p class="c">YRF</p>
+                                    <p class="d">17M views &#183   1 month ago</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                    </div>
+
+                      
+                    <div >
+                        <div class="img-div">
+            
+                        <img class="a" src="img.webp2.webp">
+                        <div class="duration">3:06</div>
+                        </div>
+                            <div style="display:grid;
+                            grid-template-columns: 20px 1fr;
+                            " >
+                                <div>
+                                    <img class="profile" src="profile-4.jpg">
+                                </div>
+                                <div style="display:inline-block;
+                                margin-left:24px;">
+                                    <p class="b"><b>SARIPODHAA SANIVAARAM Trailer - Nani | Priyanka | SJ Suryah | Vivek Athreya | DVV Danayya</b></p>
+                                    <p class="c">DVV Entertainment</p>
+                                    <p class="d">19M views &#183  2 weeks ago</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                    </div>
+                    <div >
+                        <div class="img-div">
+            
+                        <img class="a" src="img.webp">
+                        <div class="duration">24:26</div>
+                        </div>
+                            <div style="display:grid;
+                            grid-template-columns: 20px 1fr;
+                            " >
+                                <div>
+                                    <img class="profile" src="profile-5.jpg">
+                                </div>
+                                <div style="display:inline-block;
+                                margin-left:24px;">
+                                    <p class="b"><b>2 Sides || Episode - 1 || Varsha Dsouza || Aakanksha Honey || Telugu Web Series || tes</b></p>
+                                    <p class="c">Infinitum Media by Varsha Dsouza</p>
+                                    <p class="d">1M views &#183  3 weeks ago</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                    </div>
+                   
+
+                    <div >
+                        <div class="img-div">
+            
+                        <img class="a" src="img-6.webp">
+                        <div class="duration">15:26</div>
+                        </div>
+                            <div style="display:grid;
+                            grid-template-columns: 20px 1fr;
+                            " >
+                                <div>
+                                    <img class="profile" src="profile-6.jpg">
+                                </div>
+                                <div style="display:inline-block;
+                                margin-left:24px;">
+                                    <p class="b"><b>What should you do in 2nd year of college? 2nd Year Roadmap</b></p>
+                                    <p class="c">Apna College</p>
+                                    <p class="d">167k views &#183  1 year ago</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                    </div>
+                    <div >
+                        <div class="img-div">
+            
+                        <img class="a" src="img-7.webp">
+                        <div class="duration">17:30</div>
+                        </div>
+                            <div style="display:grid;
+                            grid-template-columns: 20px 1fr;
+                            " >
+                                <div>
+                                    <img class="profile" src="profilr-7.jpg">
+                                </div>
+                                <div style="display:inline-block;
+                                margin-left:22px;">
+                                    <p class="b"><b>Tom & Jerry | Here Comes Winter! ☃️ | Cartoon Compilation | @wbkids</b></p>
+                                    <p class="c">WB Kids</p>
+                                    <p class="d">19M views &#183  1 year ago</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                    </div>
+                    <div >
+                        <div class="img-div">
+            
+                        <img class="a" src="img-8.webp">
+                        <div class="duration">8:45</div>
+                        </div>
+                            <div style="display:grid;
+                            grid-template-columns: 20px 1fr;
+                            " >
+                                <div>
+                                    <img class="profile" src="profile-8.jpg">
+                                </div>
+                                <div style="display:inline-block;
+                                margin-left:26px;">
+                                    <p class="b"><b>How to start Leetcode(as a beginner)</b></p>
+                                    <p class="c">Ashish Prathap Singh</p>
+                                    <p class="d">829k views &#183 8 months ago</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                    </div>
+
+                    <div >
+                        <div class="img-div">
+            
+                        <img class="a" src="img-9.webp">
+                        <div class="duration">1:22:56</div>
+                        </div>
+                            <div style="display:grid;
+                            grid-template-columns: 20px 1fr;
+                            " >
+                                <div>
+                                    <img class="profile" src="profile-9.jpg">
+                                </div>
+                                <div style="display:inline-block;
+                                margin-left:26px;">
+                                    <p class="b"><b>C++ Tutorial for Beginners - Learn C++ in 1 Hour</b></p>
+                                    <p class="c">Programming with Mosh</p>
+                                    <p class="d">3.2M views &#183 2 Years ago</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                    </div>
+
+
+
+
+        </div>
+       
+
+    </body>
+
+</html
