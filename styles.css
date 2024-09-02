@@ -1,0 +1,215 @@
+            .a{
+                width:100%;
+            }
+            .video-preview{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+                column-gap:15px;
+                margin-left:25px;
+               margin-top:75px;
+                row-gap:15px;
+            }
+            .profile{
+                width:40px;
+                height:40px;
+                border-radius:30px;
+                margin-top:15px;
+            }
+            .video-inside{
+                display:flex;
+                flex-direction:row;
+             
+            }
+            .video-2{
+                margin-left:10px;
+            }
+            .b{
+            font-family: arial;
+            font-size:15px;
+            margin-bottom:6px;
+            }
+            .c{
+            font-family: arial;
+            font-size:12px;
+            margin-top:0px;
+            margin-bottom:2px;
+            }
+            .d{
+            font-family: arial;
+            font-size:12px;
+            margin-top:0px;
+            margin-bottom:0px;
+         
+           
+       
+         
+           
+        }
+        .hamburger-menu{
+            width:30px;
+            margin-left:10px;
+       
+        }
+        .youtube-logo{
+            width:110px;
+            margin-left:12px;
+   
+        }
+        .search{
+            width:50px;
+            background-color:white;
+            border-color:rgb(192, 192, 192);
+            box-shadow:inset 1px 2px 3px rgba(0  0  0  0.005);
+            border-width: 1px;
+            border-style:solid;
+            height:29px;
+            margin-left:-1px;
+           
+            margin-right:10px;
+
+        }
+        .voice-search{
+            border:none;
+            background-color:white;
+            border-radius:30px;
+           
+         
+
+
+        }
+        .vosea-2{
+            height:20px;
+            margin-top:4px;
+          
+           
+            
+            width:20px;
+            border-radius: 25px;
+           
+        }
+        .search-2{
+           height:25px;
+        }
+        .search-bar{
+         flex:1;
+            height:25px;
+            border-width: 1px;
+            margin-top:0;
+            border-color:rgb(192, 192, 192);
+            padding-left:8px;
+          
+            box-shadow:inset 1px 2px 3px rgba(0  0  0  0.005);
+           border-style:solid;
+         
+           display:flex;
+           width:400px;
+        
+           
+        }
+        .search-bar::placeholder{
+            font-family:arial;
+        }
+        .upload{
+            width:25px;
+            height:22px;
+
+        }
+        .notification{
+            width:27px;
+            height:27px;
+            position:relative;
+        }
+        .count{
+            background-color:rgb(193, 5, 5);
+            color:white;
+            position:absolute;
+            
+           
+            right:0;
+            top:0;
+
+        }
+        .dp{
+            width:30px;
+            height:30px;
+            border-radius:30px;
+
+        }
+        
+        .sidebar{
+            position:fixed;
+            top:70px;
+            left:0;
+            bottom:0;
+            background-color:white;
+          
+
+            
+            width:72px;
+
+        }
+        .sidebar-link{
+            display:flex;
+            flex-direction:column;
+           justify-content:center;
+           align-items:center;
+            height:100px;
+            cursor:pointer;
+        }
+        .sidebar-link:hover{
+            background-color:rgb(235, 235, 235);
+        }
+       .sidebar-link img{
+        
+        
+        height:26px;
+        margin-bottom:4px;
+       }
+       .sidebar-link div{
+        font-family:Roboto,Arial;
+        font-weight:bold;
+        font-size:10px;
+
+       }
+        .notification-container{
+            position:relative;
+        }
+        .text{
+           position:absolute;
+           top:0;
+           right:-1px;
+           font-size:11px;
+           padding-left:5px;
+           padding-right:5px;
+           padding-top:2px;
+           padding-bottom:2px;
+           border-radius:15px;
+           background-color:rgb(186, 5, 5);
+           font-family: roboto,arial;
+           color:white;
+        }
+        .img-div{
+            position:relative;
+            
+        }
+        .duration{
+            position:absolute;
+            background-color:rgb(27, 23, 23);
+            color:white;
+            font-family:arial;
+            bottom:10px;
+            right:0;
+            margin-right:6px;
+            font-size:11px;
+            padding-top:1px;
+            padding-left:3px;
+            padding-right:3px;
+            padding-bottom:1px;
+            font-weight:bold;
+            border-radius:2px;
+        }
+
+
+
+
+
